@@ -8,7 +8,7 @@ webcam = cv2.VideoCapture(0)
 detector = HandDetector(detectionCon=0.6, maxHands=2)
 screen_w, screen_h = pyautogui.size()
 click_threshold = 30  # Ajusta según necesidad
-smooth_factor = 4   # Para movimientos más suaves
+smooth_factor = 2   # Para movimientos más suaves
 
 # Variables de control
 prev_x, prev_y = 0, 0
